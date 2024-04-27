@@ -1,0 +1,116 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style : normal;
+    font-variation-settings: "wdth" 100;
+}
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .nav-bar {
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+  
+  .add-task-section {
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 10px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .today-list,
+  .future-list,
+  .complete-list {
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px; 
+  }
+  
+  .today-list h2,
+  .future-list h2,
+  .complete-list h2 {
+    text-align: center; 
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .task-list {
+    background-color: #f5f3f3;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .task-card {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    gap: 10px; 
+  }
+  
+  
+  .task-card.completed {
+    border-color: #4caf50;
+  }
+  
+  .task-card.expired {
+    border-color: #f44336;
+  }
+  
+  .task-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .task-card button {
+    background-color: #323532; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+    cursor: pointer;
+  }
+  
+  .task-card button:hover {
+    background-color: black; 
+  }
+  

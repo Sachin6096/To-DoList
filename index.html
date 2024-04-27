@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="nav-bar">
+            <h1>To-Do List</h1>
+        </header>
+
+        <section class="add-task-section">
+            <div class="input-group">
+                <input type="text" id="itemName" placeholder="Item Name">
+                <input type="date" id="date" placeholder="Deadline">
+                <select id="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <button onclick="addItem()" class="btn">Add Item</button>
+        </section>
+
+        <section class="today-list">
+            <h2>Today's TodoList</h2>
+            <div id="todaysTasks"></div>
+        </section>
+
+        <section class="future-list">
+            <h2>Future TodoList</h2>
+            <div id="futureTasks"></div>
+        </section>
+
+        <section class="complete-list">
+            <h2>Completed TodoList</h2>
+            <div id="completedTasks"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
